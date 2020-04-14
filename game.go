@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	"math/rand" //generates random number
-	"time"      //
+	"time"
 )
 
 func main() {
@@ -14,7 +14,7 @@ func main() {
 	// Typically a non-fixed seed should be used, such as time.Now().UnixNano().
 	// Using a fixed seed will produce the same output on every run
 	number := rand.New(source)
-	randomNumber := number.Intn(15) //setting limit 0 - whatever you set greater than 0 returns int so sources match int and int not int and rand*
+	randomNumber := number.Intn(10) //setting limit 0 - whatever you set greater than 0 returns int so sources match int and int not int and rand*
 
 	var userGuess int
 
